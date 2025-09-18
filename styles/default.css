@@ -12,11 +12,11 @@
     --f-size-l: 1.25rem;
     --f-size-xl: 1.5rem;
     --f-size-xxl: 2rem;
-    --f-fonte-s: var(--f-size-s)/160% var(--font-family);
-    --f-fonte-p: var(--f-size-p)/160% var(--font-family);
-    --f-fonte-l: var(--f-size-l)/160% var(--font-family);
-    --f-fonte-xl: var(--f-size-xl)/160% var(--font-family);
-    --f-fonte-xxl: var(--f-size-xxl)/160% var(--font-family);
+    --f-font-s: var(--f-size-s)/160% var(--font-family);
+    --f-font-p: var(--f-size-p)/160% var(--font-family);
+    --f-font-l: var(--f-size-l)/160% var(--font-family);
+    --f-font-xl: var(--f-size-xl)/160% var(--font-family);
+    --f-font-xxl: var(--f-size-xxl)/160% var(--font-family);
     --green-dark: #015F43;
     --green: #00875F;
     --green-light: #00B37E;
@@ -27,7 +27,7 @@
     --shape-secondary: #29292E;
     --shape-tertiary: #323238;
     --placeholder: #7C7C8A;
-    --texto-base: #C4C4CC;
-    --titulos: #E1E1E6;
+    --text-base: #C4C4CC;
+    --title: #E1E1E6;
     --white: #FFFFFF;
 }
