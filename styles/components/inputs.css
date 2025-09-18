@@ -1,0 +1,13 @@
+.register {
+    background: var(--background);
+    border-radius: .375rem;
+    color: var(--placeholder);
+    font: var(--f-font-p);    
+    padding: 1rem;
+    outline: none;
+    border: 1px solid transparent;      
+    &:focus {
+        border-color: var(--green-light);
+        color: var(--white);
+    }    
+}
