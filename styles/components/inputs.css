@@ -3,9 +3,12 @@
     border-radius: .375rem;
     color: var(--placeholder);
     font: var(--f-font-p);    
-    padding: 1rem;
+    padding: .5rem;
     outline: none;
-    border: 1px solid transparent;      
+    border: 1px solid transparent;
+    &:hover {
+        border-color: var(--green-light);
+    }     
     &:focus {
         border-color: var(--green-light);
         color: var(--white);

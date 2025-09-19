@@ -1,15 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Controle Financeiro</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
-      
-</body>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Controle Financeiro</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>         
+        <header>
+            <div class="container__accounts">
+                <button class="new__register btn small">Nova transação</button>            
+                <div class="card__accounts">
+                    <h2>Sávio</h2>
+                    <p><small>R$</small> 00,00</p>
+                    <button>Histórico</button>
+                </div>
+                <div class="card__accounts">
+                    <h2>Jamylle e Sávio</h2>
+                    <p><small>R$</small> 00,00</p>
+                    <button>Histórico</button>
+                </div>
+                <div class="card__accounts">
+                    <h2>Jamylle</h2>
+                    <p><small>R$</small> 00,00</p>
+                    <button>Histórico</button>
+                </div>
+                <div class="card__accounts nubank">
+                    <h2>Fatura Nubank</h2>
+                    <p><small>R$</small> 00,00</p>                    
+                </div>
+            </div>          
+        </header>
+        <main id="app">
+            <fieldset class="container__search">
+                <input type="text" placeholder="Busque uma transação" class="register">
+                <button class="btn search">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 5.5C9.52944 5.5 5.5 9.52944 5.5 14.5C5.5 19.4706 9.52944 23.5 14.5 23.5C19.4706 23.5 23.5 19.4706 23.5 14.5C23.5 9.52944 19.4706 5.5 14.5 5.5ZM2.5 14.5C2.5 7.87258 7.87258 2.5 14.5 2.5C21.1274 2.5 26.5 7.87258 26.5 14.5C26.5 21.1274 21.1274 26.5 14.5 26.5C7.87258 26.5 2.5 21.1274 2.5 14.5Z" fill="currentColor"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.8644 20.8643C21.4502 20.2785 22.3999 20.2785 22.9857 20.8643L29.0607 26.9393C29.6465 27.5251 29.6465 28.4749 29.0607 29.0606C28.4749 29.6464 27.5252 29.6464 26.9394 29.0606L20.8644 22.9856C20.2786 22.3999 20.2786 21.4501 20.8644 20.8643Z" fill="currentColor"/>
+                    </svg>
+                    Buscar
+                </button>
+            </fieldset>                       
+            <div class="container">
+                <div class="card">
+                    <span class="description">Almoço</span>
+                    <span class="value"><small>R$</small> 12,00</span>
+                    <span class="person">Sávio</span>
+                    <span class="date">13/04/2022</span>
+                </div>                                                    
+                <div class="card">
+                    <span class="description">Pizza</span>
+                    <span class="value"><small>R$</small> 50,00</span>
+                    <span class="person">Jamylle e Sávio</span>
+                    <span class="date">13/04/2022</span>
+                </div>            
+                <div class="card">
+                    <span class="description">Uber</span>
+                    <span class="value"><small>R$</small> 45,00</span>
+                    <span class="person">Jamylle</span>
+                    <span class="date">13/04/2022</span>
+                </div>            
+                <div class="pagination">
+                    <button class="pag__btn prev">
+                        <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.7955 0.704505C10.2348 1.14384 10.2348 1.85616 9.7955 2.2955L3.09099 9L9.7955 15.7045C10.2348 16.1438 10.2348 16.8562 9.7955 17.2955C9.35616 17.7348 8.64384 17.7348 8.2045 17.2955L0.704505 9.7955C0.265165 9.35616 0.265165 8.64384 0.704505 8.2045L8.2045 0.704505C8.64384 0.265165 9.35616 0.265165 9.7955 0.704505Z" fill="currentColor"/>
+                        </svg>
+                    </button>
+                    <div class="pag__numbers">
+                        <button class="active">1</button>
+                        <button>2</button>
+                        <button>3</button>
+                    </div>
+                    <button class="pag__btn next">
+                        <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.2045 0.704505C0.765165 1.14384 0.765165 1.85616 1.2045 2.2955L7.90901 9L1.2045 15.7045C0.765165 16.1438 0.765165 16.8562 1.2045 17.2955C1.64384 17.7348 2.35616 17.7348 2.7955 17.2955L10.2955 9.7955C10.7348 9.35616 10.7348 8.64384 10.2955 8.2045L2.7955 0.704505C2.35616 0.265165 1.64384 0.265165 1.2045 0.704505Z" fill="currentColor"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </body>
 </html>

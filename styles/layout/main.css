@@ -1,0 +1,85 @@
+#app {    
+    max-width: 70rem;
+    margin-inline: auto;   
+    display: flex;
+    flex-direction: column;    
+}
+.container__search {
+    margin-block: 4rem 1.275rem;
+    display: flex;
+    align-items: center;    
+    gap: .5rem;
+    & > input {
+        width: 100%;
+    }
+}
+.container {            
+    width: 100%;  
+    max-width: 70rem;
+    display: flex;    
+    flex-direction: column;
+}
+.card {
+    background: var(--shape-secondary);
+    color: var(--text-base);
+    border-radius: .375rem;
+    padding: .5rem;
+    margin-bottom: .75rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    align-items: center;
+}
+.card span {
+    display: block;    
+    font: var(--f-font-p);
+    color: var(--text-base);
+}
+.card .value small {
+    font-size: .625rem;
+}
+.date {
+    text-align: right;
+}
+.pagination {
+    margin-block: .25rem;
+    padding-bottom: .3rem;
+    text-align: center;
+    display: flex;
+    align-self: center;
+    gap: 1rem;
+}
+.pag__btn {
+    background: none;   
+    display: flex; 
+    align-items: center;
+    svg {
+        color: var(--shape-tertiary);
+        width: .609375rem;
+        height: 1.078125rem;
+        cursor: pointer;
+        &:hover {
+            color: var(--green-dark);
+        }
+    }    
+}
+.pag__numbers {
+    display: flex;
+    gap: .8rem;
+}
+.pag__numbers button {
+    background: var(--shape-tertiary);
+    color: #8D8D99;
+    outline: none;
+    border: 1px solid var(--shape-tertiary);    
+    cursor: pointer;
+    padding: .3125rem .75rem;
+    border-radius: .25rem;
+    &:hover {
+        border-color: var(--green-dark);
+    }
+}
+button.active {
+    background: var(--green-dark);
+    border-color: var(--green-dark);
+    color: var(--white);
+}

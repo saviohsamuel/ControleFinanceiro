@@ -9,14 +9,17 @@
 .small {
     font: var(--f-font-s);
     padding: .5rem 1rem;
+    font-weight: bold;
 }
 .medium {
     font: var(--f-font-p);
     padding: .75rem 1.25rem;
+    font-weight: bold;
 }
 .large {
     font: var(--f-font-l);
     padding: 1rem 2rem;
+    font-weight: bold;
 }
 .search {    
     border: 1px solid var(--green-light);    
@@ -24,7 +27,7 @@
     color: var(--green-light);        
     font: var(--f-font-p);      
     font-weight: 900;
-    padding: .875rem 2rem;  
+    padding: .5rem 1rem;  
     display: flex;
     align-items: center;
     gap: .75rem;
@@ -44,7 +47,7 @@
     color: var(--text-base);
     font: var(--f-font-p);
     font-weight: 400;
-    padding: 1rem 1.5rem;
+    padding: 18rem 1.5rem;
     width: 13.1875rem;
     display: flex;
     align-items: center;

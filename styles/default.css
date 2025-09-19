@@ -30,4 +30,14 @@
     --text-base: #C4C4CC;
     --title: #E1E1E6;
     --white: #FFFFFF;
+    --nubank: #800080;
+}
+body {
+    font: var(--f-font-p);
+    background: var(--shape-principal);
+    color: var(--white);    
+    a {
+        text-decoration: none;
+        color: var(--white);
+    }
 }
